@@ -24,14 +24,14 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/src/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     }
   },
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "files": [
     "dist"
   ],
