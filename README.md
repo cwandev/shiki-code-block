@@ -53,6 +53,17 @@ const code = `pnpm add shiki-code-block-svelte`
 ### Svelte Styles
 
 ```css
+/* Dark mode */
+
+:global(html.dark .shiki),
+:global(html.dark .shiki span) {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+    font-style: var(--shiki-dark-font-style) !important;
+    font-weight: var(--shiki-dark-font-weight) !important;
+    text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
 :global(.shiki--code--block) {
     width: 100%;
     max-width: fit-content;
@@ -94,6 +105,16 @@ const code = `pnpm add shiki-code-block-react`
 
 ### React Styles
 ```css
+/* Dark mode */
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
 .shiki--code--block {
   width: 100%;
   max-width: fit-content;
@@ -136,6 +157,16 @@ const code = `pnpm add shiki-code-block-vue`
 
 ```css
 <style>
+/* Dark mode */
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
 .shiki--code--block {
   width: 100%;
   max-width: fit-content;
@@ -158,3 +189,39 @@ code {
 }
 </style>
 ```
+
+## Usage With A Shiki Transformer
+
+Check out the [shiki-transformer-copy-button](https://github.com/selemondev/shiki-transformer-copy-button).
+
+Install the **shiki-transformer-copy-button** as shown below:
+
+```bash
+pnpm add @selemondev/shiki-transformer-copy-button
+```
+
+### Import
+
+```js
+import { transformerCopyButton } from '@selemondev/shiki-transformer-copy-button'
+```
+
+```js
+<div style="display: grid; place-items: center; height: 100vh; width: 100vw;">
+    <CodeBlock lang="typescript" :code="code" :theme="{
+      light: 'vitesse-light',
+      dark: 'vitesse-dark'
+    }" :transformers="[
+      transformerCopyButton({
+        duration: 3000,
+        display: 'ready',
+        successIcon: `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='rgba(128,128,128,1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='m9 14 2 2 4-4'/%3E%3C/svg%3E`,
+        copyIcon: `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='rgba(128,128,128,1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3C/svg%3E`,
+      })
+    ]" />
+</div>
+```
+
+## Credits go to this amazing project:
+
+- [Shiki](https://shiki.style/) - A beautiful yet powerful syntax highlighter.
