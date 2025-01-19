@@ -226,10 +226,10 @@ import { transformerCopyButton } from '@selemondev/shiki-transformer-copy-button
 
 | name          |     type      |       description         |
 |:-------------:|:-------------:|:-------------------------:|
-|  lang         | `[BundledLanguage](https://shiki.style/languages)` |  The language for the provided code. |
+|  lang         | [BundledLanguage](https://shiki.style/languages) |  The language for the provided code. |
 |  code         | `string` |  The code snippet. |
-|  theme        | `[BuiltinTheme](https://shiki.style/themes)` |  A theme object with `light` and `dark` properties for dark and light mode support. |
-|  transformers | `[ShikiTransformer[]](https://shiki.style/packages/transformers)` |  Adds extra features on top of Shiki |
+|  theme        | [BuiltinTheme](https://shiki.style/themes) |  A theme object with `light` and `dark` properties for dark and light mode support. |
+|  transformers | [ShikiTransformer[]](https://shiki.style/packages/transformers) |  Adds extra features on top of Shiki |
 
 ## Credits go to this amazing project:
 
