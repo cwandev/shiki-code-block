@@ -1,0 +1,60 @@
+{
+  "name": "shiki-code-block-svelte",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
+  "description": "A Shiki based Svelte Code Block Component ✨",
+  "author": "Selemondev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selemondev/shiki-code-block"
+  },
+  "bugs": {
+    "url": "https://github.com/selemondev/shiki-code-block/issues"
+  },
+  "keywords": [
+    "svelte",
+    "svelte-component",
+    "svelte-code-block",
+    "typescript",
+    "shiki",
+    "shiki-code-block",
+    "code-block"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js"
+    }
+  },
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "!dist/**/*.spec.*",
+    "!dist/**/*.test.*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && npm run prepack",
+    "preview": "vite preview",
+    "prepack": "svelte-kit sync && svelte-package",
+    "release": "npx changelogen@latest --release && npm publish --access=public && git push --follow-tags",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "peerDependencies": {
+    "shiki": "^1.27.2",
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^4.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/package": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "publint": "^0.3.2",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "shiki-code-block-vue",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
+  "description": "A Shiki based Vue Code Block Component ✨",
+  "author": "Selemondev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selemondev/shiki-code-block"
+  },
+  "bugs": {
+    "url": "https://github.com/selemondev/shiki-code-block/issues"
+  },
+  "keywords": [
+    "vue3",
+    "vue3-component",
+    "vue-code-block",
+    "typescript",
+    "shiki",
+    "shiki-code-block",
+    "code-block"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "vite build",
+    "release": "npx changelogen@latest --release && npm publish --access=public && git push --follow-tags",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "@vue/tsconfig": "^0.7.0",
+    "shiki": "^1.26.1",
+    "vue": "^3.2.0",
+    "vue-tsc": "^2.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.13.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.18.0",
+    "tsup": "^8.3.5"
+  }
+}

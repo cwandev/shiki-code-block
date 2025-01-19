@@ -1,0 +1,42 @@
+{
+  "name": "shiki-code-block",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
+  "description": "A Shiki based Code Block Component ✨",
+  "author": "Selemondev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selemondev/shiki-code-block"
+  },
+  "bugs": {
+    "url": "https://github.com/selemondev/shiki-code-block/issues"
+  },
+  "keywords": [
+    "vue3",
+    "vue3-component",
+    "vue-code-block",
+    "typescript",
+    "shiki",
+    "shiki-code-block",
+    "code-block"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build:packages": "pnpm -r run build",
+    "generate:release": "pnpm build:packages && pnpm -r release",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.13.0",
+    "eslint": "^9.18.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vite-plugin-dts": "^4.5.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
