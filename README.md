@@ -50,6 +50,8 @@ const code = `pnpm add shiki-code-block-svelte`
 </div>
 ```
 
+### Svelte Styles
+
 ```css
 :global(.shiki--code--block) {
     width: 100%;
@@ -88,4 +90,71 @@ const code = `pnpm add shiki-code-block-react`
   }}
   code={code}
 />
+```
+
+### React Styles
+```css
+.shiki--code--block {
+  width: 100%;
+  max-width: fit-content;
+}
+
+pre {
+  z-index: 1;
+  padding: 24px;
+  border-radius: 10px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  background-color: #F9F9F9 !important;
+}
+
+code {
+  display: block;
+  line-height: 1.7;
+}
+```
+
+## Vue 3 Usage
+
+```js
+import CodeBlock from 'shiki-code-block-vue'
+const code = `pnpm add shiki-code-block-vue`
+```
+
+```js
+<div style="display: grid; place-items: center; height: 100vh; width: 100vw;">
+    <CodeBlock lang='typescript' :code="code" :theme="{
+      light: 'vitesse-light',
+      dark: 'vitesse-dark'
+    }" />
+</div>
+```
+
+### Vue 3 Styles
+
+```css
+<style>
+.shiki--code--block {
+  width: 100%;
+  max-width: fit-content;
+}
+
+pre {
+  z-index: 1;
+  padding: 24px;
+  border-radius: 10px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  background-color: #F9F9F9 !important;
+}
+
+code {
+  display: block;
+  line-height: 1.7;
+}
+</style>
 ```
