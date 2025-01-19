@@ -222,6 +222,14 @@ import { transformerCopyButton } from '@selemondev/shiki-transformer-copy-button
 </div>
 ```
 
+## Props
+
+| name          |     type      |       description         |
+|:-------------:|:-------------:|:-------------------------:|
+|  lang         | `BundledLanguage` |  The provided code language. |
+|  code         | `string` |  The code snippet. |
+|  theme        | `BuiltinTheme` |  A theme object with `light` and `dark` properties for dark and light mode support. |
+
 ## Credits go to this amazing project:
 
 - [Shiki](https://shiki.style/) - A beautiful yet powerful syntax highlighter.
