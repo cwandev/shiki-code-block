@@ -1,7 +1,7 @@
 {
   "name": "shiki-code-block-vue",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
   "description": "A Shiki based Vue Code Block Component ✨",
   "author": "Selemondev",
@@ -39,7 +39,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "vite build",
-    "release": "npx changelogen@latest --release && npm publish --access=public && git push --follow-tags",
+    "bump:package": "npx bumpp@latest",
+    "release": "npm publish --access=public",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
@@ -51,7 +52,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.13.0",
     "@vitejs/plugin-vue": "^5.2.1",
-    "eslint": "^9.18.0",
-    "tsup": "^8.3.5"
+    "eslint": "^9.18.0"
   }
 }
