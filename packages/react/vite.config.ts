@@ -24,7 +24,7 @@ export default defineConfig({
       fileName: (format: string) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime'],
+      external: ['react', 'react/jsx-runtime', 'shiki'],
       output: {
         globals: {
           react: 'React',
