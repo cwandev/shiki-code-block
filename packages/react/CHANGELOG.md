@@ -3,6 +3,8 @@
 
 ## v0.0.1
 
+## v0.0.1
+
 [compare changes](https://github.com/selemondev/shiki-code-block/compare/v0.0.1...v0.0.1)
 
 ### 🏡 Chore
