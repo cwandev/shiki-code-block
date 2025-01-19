@@ -54,7 +54,17 @@ const code = `pnpm add shiki-code-block-svelte`
 
 ```css
 /* Dark mode */
-
+@media (prefers-color-scheme: dark) {
+:global(.shiki),
+:global(.shiki span) {
+      color: var(--shiki-dark) !important;
+      background-color: var(--shiki-dark-bg) !important;
+      /* Optional, if you also want font styles */
+      font-style: var(--shiki-dark-font-style) !important;
+      font-weight: var(--shiki-dark-font-weight) !important;
+      text-decoration: var(--shiki-dark-text-decoration) !important;
+  }
+}
 :global(html.dark .shiki),
 :global(html.dark .shiki span) {
     color: var(--shiki-dark) !important;
@@ -76,8 +86,8 @@ const code = `pnpm add shiki-code-block-svelte`
     -ms-overflow-style: none;
     scrollbar-width: none;
     position: relative;
-    background-color: #F9F9F9 !important;
-  }
+    background-color: #f9f9f9 !important;
+}
 :global(code) {
     display: block;
     line-height: 1.7;
@@ -106,6 +116,18 @@ const code = `pnpm add shiki-code-block-react`
 ### React Styles
 ```css
 /* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .shiki,
+    .shiki span {
+      color: var(--shiki-dark) !important;
+      background-color: var(--shiki-dark-bg) !important;
+      /* Optional, if you also want font styles */
+      font-style: var(--shiki-dark-font-style) !important;
+      font-weight: var(--shiki-dark-font-weight) !important;
+      text-decoration: var(--shiki-dark-text-decoration) !important;
+    }
+}
+
 html.dark .shiki,
 html.dark .shiki span {
   color: var(--shiki-dark) !important;
@@ -134,6 +156,7 @@ pre {
 code {
   display: block;
   line-height: 1.7;
+  font-size: 15px;
 }
 ```
 
@@ -157,7 +180,19 @@ const code = `pnpm add shiki-code-block-vue`
 
 ```css
 <style>
-/* Dark mode */
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .shiki,
+  .shiki span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+    /* Optional, if you also want font styles */
+    font-style: var(--shiki-dark-font-style) !important;
+    font-weight: var(--shiki-dark-font-weight) !important;
+    text-decoration: var(--shiki-dark-text-decoration) !important;
+  }
+}
+
 html.dark .shiki,
 html.dark .shiki span {
   color: var(--shiki-dark) !important;
@@ -186,6 +221,7 @@ pre {
 code {
   display: block;
   line-height: 1.7;
+  font-size: 15px;
 }
 </style>
 ```
