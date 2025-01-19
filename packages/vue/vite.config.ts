@@ -24,7 +24,7 @@ export default defineConfig({
       fileName: (format: string) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue', 'shiki'],
     },
   },
 })
