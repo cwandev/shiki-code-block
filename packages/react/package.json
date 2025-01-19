@@ -39,7 +39,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "tsc && vite build",
-    "release": "npx bumpp && npm publish --access=public",
+    "bump:package": "npx bumpp@latest",
+    "release": "npm publish --access=public",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
