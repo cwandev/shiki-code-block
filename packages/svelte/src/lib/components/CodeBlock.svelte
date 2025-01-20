@@ -41,26 +41,3 @@
 >
   {@html codeToHtml}
 </div>
-
-<style>
-  :global(.shiki--code--block) {
-    width: 100%;
-    max-width: max-content;
-  }
-
-  :global(pre) {
-    z-index: 1;
-    padding: 24px;
-    border-radius: 10px;
-    overflow-x: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    position: relative;
-    background-color: #f9f9f9 !important;
-  }
-
-  :global(code) {
-    display: block;
-    line-height: 1.9;
-  }
-</style>
