@@ -25,6 +25,8 @@ pnpm add shiki-code-block-svelte
 
 ## Svelte Usage
 
+Svelte Marquee uses shiki-code-block-svelte. You can check it out [here](https://svelte-marquee.vercel.app/).
+
 ```js
 import CodeBlock from 'shiki-code-block-svelte'
 const code = `pnpm add shiki-code-block-svelte`
@@ -153,6 +155,8 @@ code {
 ```
 
 ## Vue 3 Usage
+
+Vue Marquee uses shiki-code-block-vue. You can check it out [here](https://vue3-marquee-component.vercel.app/).
 
 ```js
 import CodeBlock from 'shiki-code-block-vue'
