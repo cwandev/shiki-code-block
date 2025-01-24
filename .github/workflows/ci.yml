@@ -30,7 +30,7 @@ jobs:
         run: nci
 
       - name: Build
-        run: nr build:packages
+        run: nr build
 
   test:
     runs-on: ${{ matrix.os }}
