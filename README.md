@@ -70,7 +70,6 @@ const code = `pnpm add shiki-code-block-svelte`
 
 :global(.shiki--code--block) {
     width: 100%;
-    max-width: fit-content;
 }
 :global(pre) {
     z-index: 1;
@@ -133,7 +132,6 @@ html.dark .shiki span {
 
 .shiki--code--block {
   width: 100%;
-  max-width: fit-content;
 }
 
 pre {
@@ -200,7 +198,6 @@ html.dark .shiki span {
 
 .shiki--code--block {
   width: 100%;
-  max-width: fit-content;
 }
 
 pre {
