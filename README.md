@@ -90,6 +90,8 @@ const code = `pnpm add shiki-code-block-svelte`
 
 ## React Usage
 
+React Marquee uses shiki-code-block-react. You can check it out [here](https://marquee-dev.vercel.app/).
+
 ```js
 import CodeBlock from 'shiki-code-block-react'
 const code = `pnpm add shiki-code-block-react`
