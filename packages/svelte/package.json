@@ -2,7 +2,7 @@
   "name": "shiki-code-block-svelte",
   "type": "module",
   "version": "0.0.3-beta.2",
-  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
+  "packageManager": "pnpm@9.15.9",
   "description": "A Shiki based Svelte Code Block Component ✨",
   "author": "Selemondev",
   "license": "MIT",
@@ -51,11 +51,11 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^4.0.0",
-    "@sveltejs/kit": "^2.0.0",
-    "@sveltejs/package": "^2.0.0",
-    "@sveltejs/vite-plugin-svelte": "^4.0.0",
-    "publint": "^0.3.2",
-    "svelte": "^5.0.0",
-    "svelte-check": "^4.0.0"
+    "@sveltejs/kit": "^2.37.1",
+    "@sveltejs/package": "^2.5.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.4",
+    "publint": "^0.3.12",
+    "svelte": "^5.38.8",
+    "svelte-check": "^4.3.1"
   }
 }
