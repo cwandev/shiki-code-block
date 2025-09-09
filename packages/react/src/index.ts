@@ -1,3 +1,3 @@
-import CodeBlock from './components/CodeBlock'
+import CodeBlock from "./components/CodeBlock";
 
-export default CodeBlock
+export default CodeBlock;

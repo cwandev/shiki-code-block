@@ -1,3 +1,3 @@
-import CodeBlock from './components/CodeBlock.vue'
+import CodeBlock from "./components/CodeBlock.vue";
 
-export default CodeBlock
+export default CodeBlock;
