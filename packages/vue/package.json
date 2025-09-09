@@ -22,23 +22,11 @@
     "shiki-code-block",
     "code-block"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/src/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js"
-    }
-  },
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.es.js",
-  "types": "./dist/src/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "build": "vite build",
+    "build": "tsdown",
     "bump:package": "npx bumpp@latest",
     "release": "npm publish --access=public",
     "prepublishOnly": "pnpm build"
@@ -46,9 +34,21 @@
   "peerDependencies": {
     "@vue/tsconfig": "^0.7.0 || ^0.8.1",
     "vue": "^3",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.0 || ^3.0.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.8.1",
+    "shiki": "^3.12.2",
+    "tsdown": "^0.15.0",
+    "unplugin-vue": "^7.0.1",
+    "vue-tsc": "^3.0.6"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
   }
 }
