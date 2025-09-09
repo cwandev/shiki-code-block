@@ -1,3 +1,3 @@
-import CodeBlock from './components/CodeBlock.svelte'
+import CodeBlock from "./components/CodeBlock.svelte";
 
-export default CodeBlock
+export default CodeBlock;

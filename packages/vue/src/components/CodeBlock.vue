@@ -1,26 +1,40 @@
 <script setup lang='ts'>
-import type { BuiltinTheme, BundledLanguage, ShikiTransformer } from 'shiki'
-import { convertCodeToHtml } from '@/lib/utils/codeToHtml'
-import { ref, watch } from 'vue'
+import type { BuiltinTheme, BundledLanguage, ShikiTransformer } from "shiki";
+import { ref, watch } from "vue";
+import { convertCodeToHtml } from "@/lib/utils/codeToHtml";
 
 const props = defineProps<{
-  code: string
-  lang: BundledLanguage
-  theme: {
-    light: BuiltinTheme
-    dark?: BuiltinTheme
-  }
-  transformers?: ShikiTransformer[]
-}>()
+	code: string;
+	lang: BundledLanguage;
+	theme: {
+		light: BuiltinTheme;
+		dark?: BuiltinTheme;
+	};
+	transformers?: ShikiTransformer[];
+}>();
 
-const codeToHtml = ref('')
-watch(props, async (val: { code: string, lang: BundledLanguage, theme: { light: BuiltinTheme, dark?: BuiltinTheme }, transformers?: ShikiTransformer[] }) => {
-  if (val) {
-    return codeToHtml.value = await convertCodeToHtml(val.code?.trim(), val.lang, { light: val.theme.light, dark: val.theme.dark || 'vitesse-dark' }, val.transformers || [])
-  }
-}, {
-  immediate: true,
-})
+const codeToHtml = ref("");
+watch(
+	props,
+	async (val: {
+		code: string;
+		lang: BundledLanguage;
+		theme: { light: BuiltinTheme; dark?: BuiltinTheme };
+		transformers?: ShikiTransformer[];
+	}) => {
+		if (val) {
+			return (codeToHtml.value = await convertCodeToHtml(
+				val.code?.trim(),
+				val.lang,
+				{ light: val.theme.light, dark: val.theme.dark || "vitesse-dark" },
+				val.transformers || [],
+			));
+		}
+	},
+	{
+		immediate: true,
+	},
+);
 </script>
 
 <template>

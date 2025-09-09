@@ -36,8 +36,6 @@
     "dist"
   ],
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
     "build": "tsc && vite build",
     "bump:package": "npx bumpp@latest",
     "release": "npm publish --access=public",
