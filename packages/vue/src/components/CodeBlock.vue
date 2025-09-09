@@ -23,12 +23,14 @@ watch(
 		transformers?: ShikiTransformer[];
 	}) => {
 		if (val) {
-			return (codeToHtml.value = await convertCodeToHtml(
+			codeToHtml.value = await convertCodeToHtml(
 				val.code?.trim(),
 				val.lang,
 				{ light: val.theme.light, dark: val.theme.dark || "vitesse-dark" },
 				val.transformers || [],
-			));
+			);
+
+			return codeToHtml.value;
 		}
 	},
 	{
