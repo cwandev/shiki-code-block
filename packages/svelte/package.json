@@ -1,7 +1,7 @@
 {
   "name": "shiki-code-block-svelte",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "packageManager": "pnpm@9.15.9",
   "description": "A Shiki based Svelte Code Block Component ✨",
   "author": "Selemondev",
