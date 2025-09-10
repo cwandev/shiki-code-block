@@ -22,36 +22,36 @@
     "shiki-code-block",
     "code-block"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js"
-    }
-  },
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "tsdown",
     "bump:package": "npx bumpp@latest",
     "release": "npm publish --access=public",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
-    "@types/react": "^18.2.64",
-    "@types/react-dom": "^18.2.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "shiki": "^2.0.3"
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "shiki": "^3.12.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.16.0",
     "@types/node": "^22.18.1",
-    "@vitejs/plugin-react": "^4.7.0",
-    "eslint": "^9.35.0"
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "shiki": "^3.12.2",
+    "tsdown": "^0.15.0"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
   }
 }

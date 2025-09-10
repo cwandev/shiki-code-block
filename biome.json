@@ -7,7 +7,10 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["./packages/**/*.{tsx,jsx,vue,ts,js}"]
+		"includes": [
+			"./packages/vue/src/**/*.{tsx,jsx,vue,ts,js}",
+			"./packages/react/src/**/*.{tsx,jsx,ts,js}"
+		]
 	},
 	"formatter": {
 		"enabled": true,
@@ -16,7 +19,16 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"a11y": {
+				"useSemanticElements": "off"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
+			}
 		}
 	},
 	"javascript": {
