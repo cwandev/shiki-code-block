@@ -41,11 +41,10 @@
     "package": "pnpm build:package && pnpm publish --access=public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.16.0",
     "@biomejs/biome": "2.2.3",
-    "eslint": "^9.35.0",
     "typescript": "^5.9.2",
-    "vite": "^6.3.6"
+    "vite": "^6.3.6",
+    "vite-plugin-dts": "^4.5.4"
   },
   "workspaces": [
     "packages/*"
