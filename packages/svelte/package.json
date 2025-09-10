@@ -46,8 +46,8 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "peerDependencies": {
-    "shiki": "^2.0.3",
-    "svelte": "^5.0.0"
+    "shiki": "^3.12.2",
+    "svelte": "^5.38.8"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^4.0.0",
@@ -55,6 +55,7 @@
     "@sveltejs/package": "^2.5.0",
     "@sveltejs/vite-plugin-svelte": "^4.0.4",
     "publint": "^0.3.12",
+    "shiki": "^3.12.2",
     "svelte": "^5.38.8",
     "svelte-check": "^4.3.1"
   }
