@@ -18,35 +18,31 @@ function CodeBlock({
 }) {
 	const [codeToHtml, setCodeToHtml] = useState("");
 
-	const handleConvertCodeToHTML = async () => {
-		const codeToHtml = await convertCodeToHtml(
-			code?.trim(),
-			lang,
-			{ light: theme.light, dark: theme.dark || "vitesse-dark" },
-			transformers || [],
-		);
-		return setCodeToHtml(codeToHtml);
-	};
-
 	const setInnerHTML = () => {
 		return { __html: codeToHtml };
 	};
 	useEffect(() => {
+		const handleConvertCodeToHTML = async () => {
+			const codeToHtml = await convertCodeToHtml(
+				code?.trim(),
+				lang,
+				{ light: theme.light, dark: theme.dark || "vitesse-dark" },
+				transformers || [],
+			);
+			return setCodeToHtml(codeToHtml);
+		};
 		handleConvertCodeToHTML();
 	}, [code, lang, theme, transformers]);
 	return (
-		<>
-			<div
-				role="region"
-				aria-labelledby="codeLabel"
-				tabIndex={0}
-				aria-live="polite"
-				aria-roledescription="code block"
-				lang="en"
-				className="shiki--code--block"
-				dangerouslySetInnerHTML={setInnerHTML()}
-			></div>
-		</>
+		<div
+			role="region"
+			aria-labelledby="codeLabel"
+			aria-live="polite"
+			aria-roledescription="code block"
+			lang="en"
+			className="shiki--code--block"
+			dangerouslySetInnerHTML={setInnerHTML()}
+		/>
 	);
 }
 

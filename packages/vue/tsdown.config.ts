@@ -11,5 +11,5 @@ export default defineConfig({
 	platform: "browser",
 	plugins: [Vue({ isProduction: true })],
 	exports: true,
-	external: ['shiki']
+	external: ["shiki"],
 });
