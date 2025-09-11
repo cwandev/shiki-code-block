@@ -62,26 +62,26 @@ deno install shiki-block-vue
 <!-- /automd -->
 
 ### Svelte
-<!-- automd:pm-install name="shiki-block-vue" -->
+<!-- automd:pm-install name="shiki-block-svelte" -->
 
 ```sh
 # ✨ Auto-detect
-npx nypm install shiki-block-vue
+npx nypm install shiki-block-svelte
 
 # npm
-npm install shiki-block-vue
+npm install shiki-block-svelte
 
 # yarn
-yarn add shiki-block-vue
+yarn add shiki-block-svelte
 
 # pnpm
-pnpm install shiki-block-vue
+pnpm install shiki-block-svelte
 
 # bun
-bun install shiki-block-vue
+bun install shiki-block-svelte
 
 # deno
-deno install shiki-block-vue
+deno install shiki-block-svelte
 ```
 
 <!-- /automd -->
@@ -89,11 +89,11 @@ deno install shiki-block-vue
 
 ## Svelte Usage
 
-Svelte Marquee uses shiki-code-block-svelte. You can check it out [here](https://svelte-marquee.vercel.app/).
+Svelte Marquee uses shiki-block-svelte. You can check it out [here](https://svelte-marquee.vercel.app/).
 
 ```js
-import CodeBlock from 'shiki-code-block-svelte'
-const code = `pnpm add shiki-code-block-svelte`
+import CodeBlock from 'shiki-block-svelte'
+const code = `pnpm add shiki-block-svelte`
 ```
 ```js
 <div style="display: grid; place-items: center; height: 100vh; width: 100vw">
@@ -154,11 +154,11 @@ const code = `pnpm add shiki-code-block-svelte`
 
 ## React Usage
 
-React Marquee uses shiki-code-block-react. You can check it out [here](https://marquee-dev.vercel.app/).
+React Marquee uses shiki-block-react. You can check it out [here](https://marquee-dev.vercel.app/).
 
 ```js
-import CodeBlock from 'shiki-code-block-react'
-const code = `pnpm add shiki-code-block-react`
+import CodeBlock from 'shiki-block-react'
+const code = `pnpm add shiki-block-react`
 ```
 
 ```js
@@ -220,11 +220,11 @@ code {
 
 ## Vue 3 Usage
 
-Vue 3 Marquee uses shiki-code-block-vue. You can check it out [here](https://vue3-marquee-component.vercel.app/).
+Vue 3 Marquee uses shiki-block-vue. You can check it out [here](https://vue3-marquee-component.vercel.app/).
 
 ```js
-import CodeBlock from 'shiki-code-block-vue'
-const code = `pnpm add shiki-code-block-vue`
+import CodeBlock from 'shiki-block-vue'
+const code = `pnpm add shiki-block-vue`
 ```
 
 ```js
