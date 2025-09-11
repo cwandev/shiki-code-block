@@ -12,15 +12,78 @@ Shiki Code Block is a Shiki based component that allows you to render code in an
 You can use Shiki Code Block with your favourite framework or library. Install it as shown below
 
 ### React
-<!-- automd:pm-install name="shiki-code-block-react" dev -->
+<!-- automd:pm-install name="shiki-block-react" -->
+
+```sh
+# ✨ Auto-detect
+npx nypm install shiki-block-react
+
+# npm
+npm install shiki-block-react
+
+# yarn
+yarn add shiki-block-react
+
+# pnpm
+pnpm install shiki-block-react
+
+# bun
+bun install shiki-block-react
+
+# deno
+deno install shiki-block-react
+```
+
 <!-- /automd -->
 
 ### Vue
-<!-- automd:pm-install name="shiki-code-block-vue" dev -->
+<!-- automd:pm-install name="shiki-block-vue" -->
+
+```sh
+# ✨ Auto-detect
+npx nypm install shiki-block-vue
+
+# npm
+npm install shiki-block-vue
+
+# yarn
+yarn add shiki-block-vue
+
+# pnpm
+pnpm install shiki-block-vue
+
+# bun
+bun install shiki-block-vue
+
+# deno
+deno install shiki-block-vue
+```
+
 <!-- /automd -->
 
 ### Svelte
-<!-- automd:pm-install name="shiki-code-block-vue" dev -->
+<!-- automd:pm-install name="shiki-block-vue" -->
+
+```sh
+# ✨ Auto-detect
+npx nypm install shiki-block-vue
+
+# npm
+npm install shiki-block-vue
+
+# yarn
+yarn add shiki-block-vue
+
+# pnpm
+pnpm install shiki-block-vue
+
+# bun
+bun install shiki-block-vue
+
+# deno
+deno install shiki-block-vue
+```
+
 <!-- /automd -->
 
 
