@@ -1,14 +1,15 @@
 {
-  "name": "shiki-code-block-vue",
+  "name": "shiki-block-vue",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.1",
+  "private": false,
   "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
   "description": "A Shiki based Vue Code Block Component ✨",
   "author": "Selemondev",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/selemondev/shiki-code-block"
+    "url": "git+https://github.com/selemondev/shiki-code-block.git"
   },
   "bugs": {
     "url": "https://github.com/selemondev/shiki-code-block/issues"
