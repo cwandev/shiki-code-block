@@ -41,8 +41,8 @@ deno install shiki-block-vue
 Vue 3 Marquee uses shiki-code-block-vue. You can check it out [here](https://vue3-marquee-component.vercel.app/).
 
 ```js
-import CodeBlock from 'shiki-code-block-vue'
-const code = `pnpm add shiki-code-block-vue`
+import CodeBlock from 'shiki-block-vue'
+const code = `pnpm add shiki-block-vue`
 ```
 
 ```js
