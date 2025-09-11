@@ -11,17 +11,18 @@ Shiki Code Block is a Shiki based component that allows you to render code in an
 
 You can use Shiki Code Block with your favourite framework or library. Install it as shown below
 
-```bash
-pnpm add shiki-code-block-react
-```
+### React
+<!-- automd:pm-install name="shiki-code-block-react" dev -->
+<!-- /automd -->
 
-```bash
-pnpm add shiki-code-block-vue
-```
+### Vue
+<!-- automd:pm-install name="shiki-code-block-vue" dev -->
+<!-- /automd -->
 
-```bash
-pnpm add shiki-code-block-svelte
-```
+### Svelte
+<!-- automd:pm-install name="shiki-code-block-vue" dev -->
+<!-- /automd -->
+
 
 ## Svelte Usage
 

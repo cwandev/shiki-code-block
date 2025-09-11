@@ -1,10 +1,11 @@
 {
-  "name": "shiki-code-block",
+  "name": "@shiki/block",
   "type": "module",
   "version": "0.0.2",
   "packageManager": "pnpm@9.15.9",
   "description": "A Shiki based Code Block Component ✨",
   "author": "Selemondev",
+  "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
