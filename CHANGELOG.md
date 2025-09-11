@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.0.8
+
+[compare changes](https://github.com/selemondev/shiki-code-block/compare/v1.0.7...v1.0.8)
+
+### 📖 Documentation
+
+- **react:** Add guide ([dd49f71](https://github.com/selemondev/shiki-code-block/commit/dd49f71))
+- Update installation guide ([93b2236](https://github.com/selemondev/shiki-code-block/commit/93b2236))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v1.0.4
 
 [compare changes](https://github.com/selemondev/shiki-code-block/compare/v1.0.2...v1.0.4)
