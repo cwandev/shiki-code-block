@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/selemondev/shiki-code-block/compare/v1.0.2...v0.0.3)
+
+### 📖 Documentation
+
+- Add installation guide ([018c260](https://github.com/selemondev/shiki-code-block/commit/018c260))
+
+### 🏡 Chore
+
+- **svelte:** Release latest version ([b845c82](https://github.com/selemondev/shiki-code-block/commit/b845c82))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.1
 
 
