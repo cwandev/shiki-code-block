@@ -1,7 +1,7 @@
 {
   "name": "shiki-code-block-react",
   "type": "module",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "private": false,
   "packageManager": "pnpm@9.15.9",
   "description": "A Shiki based React Code Block Component ✨",
